@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #121212;
+  font-family: "montserrat", "sans-serif";
+  background: #f7f7f2;
+  line-height: 1.45;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  font-family: Programme, Arial, sans-serif;
+  line-height: 1.45;
+  text-size-adjust: 100%;
+}
+
+main {
+  padding: 0 90px 0 90px;
+}
+
+header {
+  padding: 0 90px 0 90px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: Notable, sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+h2 {
+  font-family: Jost-medium, "sans serif";
+  font-size: 60px;
+  font-weight: 400;
+  padding: 0 0 20px 0;
+}
+h3,
+h4 {
+  font-family: Jost-medium, "sans serif";
+  font-size: 45px;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+p {
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jost-medium";
+  src: url("fonts/Jost-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Thin.ttf") format("truetype");
+  font-weight: thin;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Notable";
+  src: url("fonts/Notable-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.head__items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.head__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.authbtn {
+  width: 90px;
+  height: 37px;
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+.authbtn:hover {
+  background-color: #12121213;
+}
+.head__item {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.img {
+  width: 300px;
+}
+.block-two {
+  padding: 120px 0 120px 0;
+}
+
+.block-two__items {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.block-three__items {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.item__name {
+  font-size: 20px;
+  max-width: 406px;
+}
+
+footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #121212;
+  color: #f7f7f2;
+}
+
+.footer__text {
+  font-size: 20px;
+  color: #c0c0c0;
+}
+
+.footer__head {
+  font-size: 24px;
+}
+
+.contactIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.block-two,
+.block-three {
+  padding: 90px;
+}
+
+.block-two__items,
+.block-three__items {
+  gap: 10%;
+}
+
+/* Стили для экранов шириной от 600px до 1440px (телефоны, планшеты и десктопы) */
+@media screen and (max-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: #121212;
+    font-family: "montserrat", "sans-serif";
+    background: #f7f7f2;
+    line-height: 1.45;
+  }
+
+  /* ... (остальные стили) */
+
+  /* Header */
+  header {
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 72px;
+    height: 67px;
+  }
+
+  .head__items,
+  .head__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .head__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .head__icons {
+    margin-left: auto;
+  }
+
+  /* Main */
+  main {
+    padding: 20px;
+  }
+
+  .block-two,
+  .block-three__items,
+  .block-two__items,
+  .block-two__item-one,
+  .block-two__item-two,
+  .block-two__item-tree,
+  .block-two__item-four,
+  .block-three__item-one,
+  .block-three__item-two,
+  .block-three__item-tree,
+  .block-three__item-four {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .item__name {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__head {
+    font-size: 18px;
+  }
+
+  .footer__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .contactIcons {
+    gap: 10px;
+  }
+}
+
+/* Стили для экранов шириной менее 600px (телефоны) */
+@media screen and (max-width: 599px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .head__items,
+  .head__icons {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .head__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Main */
+  main {
+    padding: 10px;
+  }
+
+  .block-two,
+  .block-three__items,
+  .block-two__items,
+  .block-two__item-one,
+  .block-two__item-two,
+  .block-two__item-tree,
+  .block-two__item-four,
+  .block-three__item-one,
+  .block-three__item-two,
+  .block-three__item-tree,
+  .block-three__item-four {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .item__name {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__text {
+    margin-bottom: 5px;
+  }
+}
